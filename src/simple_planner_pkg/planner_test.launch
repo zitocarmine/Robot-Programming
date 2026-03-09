@@ -1,0 +1,12 @@
+<launch>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find simple_planner_pkg)/maps/maze.yaml" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_base_link" args="0 0 0 0 0 0 map base_link" />
+
+    <node name="costmap_generator_node" pkg="simple_planner_pkg" type="costmap_generator_node" output="screen" />
+
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_planner_pkg)/rviz/config.rviz" />
+
+    <node name="path_planner_node" pkg="simple_planner_pkg" type="path_planner_node" output="screen" />
+</launch>
