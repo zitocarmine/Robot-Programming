@@ -1,2 +1,2 @@
-Overview
-This repository contains a complete, from-scratch implementation of a robotic navigation stack for ROS. Rather than relying on standard libraries, I developed a custom Breadth-First Search (BFS) Costmap Generator and a Weighted A Path Planner*. The project demonstrates how to transform a raw occupancy grid into a sophisticated cost-aware environment where a robot can find the safest and most efficient path through a complex maze
+
+This repository contains a complete, from-scratch implementation of a robotic navigation stack for ROS. Rather than relying on standard libraries, I developed a custom Breadth-First Search (BFS) Costmap Generator and a Weighted A Path Planner*. The project demonstrates how to transform a raw occupancy grid into a sophisticated cost-aware environment where a robot can find the safest and most efficient path through a complex maze.
